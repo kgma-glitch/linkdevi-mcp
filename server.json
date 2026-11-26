@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.kgma-glitch/linkdevi-mcp",
+  "title": "LinkDevi MCP",
+  "description": "Create campaign short links, preview UTMs, render QR images and read defined redirect counters.",
+  "repository": {
+    "url": "https://github.com/kgma-glitch/linkdevi-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "websiteUrl": "https://linkdevi.com/features/ai",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@kgma/linkdevi-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LINKDEVI_API_KEY",
+          "description": "Scoped API key from LinkDevi Connect AI. Use links:read and links:write for campaign creation.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "LINKDEVI_BASE_URL",
+          "description": "LinkDevi service origin; use the default for hosted LinkDevi.",
+          "default": "https://linkdevi.com",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

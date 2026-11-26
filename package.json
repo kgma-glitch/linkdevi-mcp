@@ -1,0 +1,48 @@
+{
+  "name": "@kgma/linkdevi-mcp",
+  "version": "0.1.1",
+  "description": "LinkDevi MCP server for campaign short links, UTM previews, QR codes and explicitly defined redirect statistics.",
+  "homepage": "https://linkdevi.com/features/ai",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "linkdevi",
+    "url-shortener",
+    "campaign",
+    "utm",
+    "qr-code"
+  ],
+  "type": "module",
+  "bin": {
+    "linkdevi-mcp": "cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "server.mjs"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test server.test.mjs package.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "license": "MIT",
+  "mcpName": "io.github.kgma-glitch/linkdevi-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgma-glitch/linkdevi-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kgma-glitch/linkdevi-mcp/issues"
+  }
+}
