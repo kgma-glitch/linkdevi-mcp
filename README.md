@@ -4,6 +4,10 @@ MIT-licensed local MCP server for creating and managing LinkDevi campaign short 
 
 Requires **Node.js 22+**, a [LinkDevi account](https://linkdevi.com/register) and a scoped API key. The connector source is free; the hosted LinkDevi service uses your account's plan, quota and request limits. This package does not include a self-hosted shortening service or a model subscription. It runs locally over stdio; remote OAuth connections are not provided.
 
+## Documentation
+
+[MCP setup guide](https://linkdevi.com/docs/mcp) · [Quickstart](https://linkdevi.com/docs/quickstart) · [API reference](https://linkdevi.com/docs/api) · [AI-readable index](https://linkdevi.com/llms.txt) · [Complete Markdown docs](https://linkdevi.com/llms-full.txt)
+
 ## Quick setup
 
 1. Sign in to [LinkDevi](https://linkdevi.com) and open **Connect AI** (`/ai`) to create a scoped key.
